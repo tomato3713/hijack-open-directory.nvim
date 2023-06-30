@@ -20,9 +20,9 @@ INSTALL                                  *hijack-open-directory-installation*
 
 ### dein.vim
 
-```vim
-call dein#add('tomato3713/hijack-open-directory.nvim')
-```
+>
+    call dein#add('tomato3713/hijack-open-directory.nvim')
+<
 
 ==============================================================================
 EXAMPLES                                 *hijack-open-directory-examples*
