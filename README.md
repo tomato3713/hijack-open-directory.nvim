@@ -21,6 +21,7 @@ vim.api.nvim_set_var('loaded_netrwPlugin', 1)
 -- Start VFiler when open directory
 require('hijack_open_directory').setup({
     filer = function(path)
+        -- callback function when open directory
         require('vfiler').start(path, {noremap = true, silent = true })
     end
 })
