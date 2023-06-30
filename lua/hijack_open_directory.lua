@@ -1,4 +1,4 @@
-local M = {}
+local hijack_open_directory = {}
 
 local function create_callback(filer)
 	return function()
@@ -8,11 +8,11 @@ local function create_callback(filer)
 	end
 end
 
-M.setup = function(opts)
+hijack_open_directory.setup = function(opts)
 	local callback = create_callback(opts.filer)
 	vim.api.nvim_create_autocmd({ "BufEnter" }, {
 		callback = callback,
 	})
 end
 
-return M
+return hijack_open_directory
