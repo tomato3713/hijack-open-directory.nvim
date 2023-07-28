@@ -26,3 +26,7 @@ require('hijack_open_directory').setup({
     end
 })
 ```
+
+## References
+
+- [Neovimでディレクトリを開いた時に任意のファイラープラグインを起動する設定を楽にするプラグインを作った - tomato3713’s blog](https://tomato3713.hatenablog.com/entry/create-hijack-open-directory-nvim)
